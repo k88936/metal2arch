@@ -1,0 +1,29 @@
+## sync user home
+```shell
+rm -r /root
+git clone https://gitee.com/k88936/dev_env.git /root
+cd /root
+chmod 600 /root/.ssh -R
+git remote set-url origin git@gitee.com:k88936/dev_env.git
+```
+
+## clasheed
+```shell
+git clone https://gitee.com/k88936/clasheed.git /clasheed
+cd clasheed
+cat README.md
+```
+
+## software repo
+```shell
+sed -i '1i Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch' /etc/pacman.d/mirrorlist
+useradd -m -G wheel -s /bin/bash yay \
+    && echo '%wheel ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/99-wheel \
+    && chmod 0440 /etc/sudoers.d/99-wheel
+sudo -u yay  git clone https://aur.archlinux.org/yay-bin.git /home/yay/yay-bin \
+    && cd /home/yay/yay-bin \
+    && makepkg -si --noconfirm --needed \
+    && cd /home/yay \
+    && rm -rf /home/yay/yay-bin
+```
+
