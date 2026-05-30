@@ -9,7 +9,7 @@ git remote set-url origin git@gitee.com:k88936/dev_env.git
 
 ## clasheed
 ```shell
-git clone https://gitee.com/k88936/clasheed.git /clasheed
+git clone git@gitee.com:k88936/clasheed /clasheed
 cd clasheed
 cat README.md
 ```
