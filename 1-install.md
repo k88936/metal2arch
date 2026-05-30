@@ -34,6 +34,6 @@ passwd -d root
 pacman -S intel-ucode
 pacman -S grub efibootmgr
 grub-install --target=x86_64-efi --efi-directory=/boot
-sudo grub-mkconfig -o /boot/grub/grub.cfg
+grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
