@@ -40,5 +40,14 @@ systemctl enable --now NetworkManager
 
 ## x11
 ```shell
-pacman -S xorg xorg-xinit i3
+pacman -S xorg xorg-xinit i3 dmenu firefox
+```
+
+## 原神
+```shell
+pacman -S rustup
+sudo -u yay rustup default stable
+yay -S mihomo mihomosh
+mihomosh profile update
+systemctl enable --now mihomo
 ```
