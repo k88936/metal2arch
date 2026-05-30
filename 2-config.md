@@ -40,7 +40,7 @@ systemctl enable --now NetworkManager
 
 ## x11
 ```shell
-pacman -S xorg xorg-xinit i3 dmenu firefox
+pacman -S xorg xorg-xinit i3 dmenu firefox brightnessctl
 yay -S microsoft-edge-stable-bin
 ```
 
