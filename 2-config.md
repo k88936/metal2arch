@@ -5,6 +5,7 @@ git clone https://gitee.com/k88936/dev_env.git /root
 cd /root
 chmod 600 /root/.ssh -R
 git remote set-url origin git@gitee.com:k88936/dev_env.git
+sh /root/.configure/etc/copy.sh
 ```
 
 ## clasheed
@@ -26,4 +27,18 @@ sudo -u yay  git clone https://aur.archlinux.org/yay-bin.git /home/yay/yay-bin \
     && cd /home/yay \
     && rm -rf /home/yay/yay-bin
 ```
+## keyd
+```shell
+pacman -S keyd
+systemctl enable --now keyd
+```
 
+## network
+```shell
+systemctl enable --now NetworkManager
+```
+
+## x11
+```shell
+pacman -S xorg xorg-xinit i3
+```
