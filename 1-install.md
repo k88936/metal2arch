@@ -16,7 +16,7 @@ swapon /dev/swap_partition
 
 configure
 ```shell
-pacstrap -K /mnt base linux linux-firmware networkmanager vim git podman podman-compose debugedit fakeroot sudo
+pacstrap -K /mnt base linux linux-firmware networkmanager vim git podman podman-compose debugedit fakeroot sudo openssh
 genfstab -U /mnt >> /mnt/etc/fstab
 arch-chroot /mnt
 
