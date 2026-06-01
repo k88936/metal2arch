@@ -38,10 +38,11 @@ systemctl enable --now keyd
 systemctl enable --now NetworkManager
 ```
 
-## x11
+## Desktop
 ```shell
-pacman -S xorg xorg-xinit i3 dmenu firefox brightnessctl alsa-utils picom
+pacman -S xorg xorg-xinit i3 dmenu firefox brightnessctl alsa-utils picom alsa-utils alsa-firmware  pulseaudio pulseaudio-alsa
 yay -S microsoft-edge-stable-bin
+systemctl --user enable --now pulseaudio
 ```
 
 ## 原神
