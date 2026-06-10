@@ -23,6 +23,6 @@ yes | sdkmanager --licenses
 ```
 
 ```
-yay -S --noconfirm --needed codewhale-bin opencode-bin openai-codex github-copilot-cli-bin
+yay -S --noconfirm --needed opencode-bin github-copilot-cli-bin junie
 
 ```
