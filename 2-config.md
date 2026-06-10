@@ -40,8 +40,12 @@ systemctl enable --now NetworkManager
 
 ## Desktop
 ```shell
-pacman -S xorg xorg-xinit i3 dmenu firefox brightnessctl alsa-utils picom alsa-utils alsa-firmware  pulseaudio pulseaudio-alsa
-yay -S microsoft-edge-stable-bin
+pacman -S xorg xorg-xinit i3 dmenu  brightnessctl picom
+pacman -S alsa-utils alsa-firmware  pulseaudio pulseaudio-alsa
+
+pacman -S xdg-user-dirs
+xdg-user-dirs-update
+yay -S microsoft-edge-stable-bin firefox
 systemctl --user enable --now pulseaudio
 ```
 
