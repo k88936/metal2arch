@@ -47,9 +47,7 @@ systemctl --user enable --now pulseaudio
 
 ## 原神
 ```shell
-pacman -S rustup
-sudo -u yay rustup default stable
-yay -S mihomo mihomosh
+yay -S mihomo-bin mihomosh-bin
 mihomosh profile update
 systemctl enable --now mihomo
 ```
